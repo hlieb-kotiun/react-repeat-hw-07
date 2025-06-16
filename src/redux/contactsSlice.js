@@ -23,9 +23,7 @@ export const slice = createSlice({
       };
     },
   },
-  extraReducers: (builder) => {
-    builder.addCase();
-  },
+  extraReducers: (builder) => {},
 });
 
 export const contactsReducer = slice.reducer;
