@@ -1,12 +1,33 @@
-# React + Vite
+📒 Contact Book
+A simple and modern contact management application built with React and Redux Toolkit, featuring backend integration via MockAPI. The app allows users to view, add, filter, and delete contacts with real-time updates from the server.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
+View a list of saved contacts
 
-Currently, two official plugins are available:
+Add new contacts via a form
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Filter contacts by name
 
-## Expanding the ESLint configuration
+Delete existing contacts
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Fetch and store contacts from a real backend
+
+Loading and error state handling for all HTTP operations
+
+🛠️ Technologies Used
+React (functional components + hooks)
+
+Redux Toolkit for state management
+
+React Redux with useSelector and useDispatch
+
+Axios for HTTP requests
+
+createAsyncThunk for async operations
+
+MockAPI.io as a mock backend service
+
+Reselect for memoized selectors
+
+🌐 Backend
+The backend is implemented via MockAPI, providing a RESTful API for the /contacts endpoint.
