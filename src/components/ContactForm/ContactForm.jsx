@@ -1,10 +1,10 @@
 import { Field, Form, Formik } from "formik";
 import s from "./ContactForm.module.css";
 import { IoPersonAddOutline, IoPersonAddSharp } from "react-icons/io5";
-import { addContact } from "../../redux/contactsSlice";
 import { useDispatch } from "react-redux";
 import { nanoid } from "@reduxjs/toolkit";
 import toast from "react-hot-toast";
+import { addContact } from "../../redux/contactsOps";
 
 const ContactForm = () => {
   const dispatch = useDispatch();
@@ -21,12 +21,10 @@ const ContactForm = () => {
 
     dispatch(
       addContact({
-        id: nanoid(),
         name: values.name,
         number: values.number,
       })
     );
-
     action.resetForm();
   };
 
